@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2 and 3 Terms</title>
+    <style>
+
+        body {
+            font-family: Tahoma, Verdana, sans-serif;
+            background-color: darkgreen;
+            margin: 2em 1.5em 2em 1.5em;
+        }
+
+        table {
+            background-color: rgb(231, 228, 228);
+            margin: 1.5em;
+            padding: 3em 1.5em 3em 1.5em;
+            border-radius: 1em;
+        }
+
+        li b {
+            text-decoration: underline;
+        }
+
+        .section {
+            background-color: beige;
+        }
+
+        .section td{
+            padding-left: 1em;
+        }
+
+        li {
+            padding-bottom: .5em;
+        }
+
+        .problems {
+            width: 100%;
+            max-width: 1000px;
+            padding: .25em;
+            margin: .25em auto .25em auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table border="10">
+        <tr style="text-align: center;">
+            <td style="background-color: darkgreen; color: white;">
+                <h1>Chapter 2: Algorithm Discovery and Design</h1>
+                <h1>Chapter 3: The Efficiency of Algorithms</h1>
+                <h2>Student: Bryan Silva</h2>
+            </td>
+        </tr>
+        <tr class="section">
+            <td><h3>Chapter 2: Algorithms</h3></td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li><b>Explain why natual language is not an effective tool for describing algorithms.</b><br> Natural Language can be extremely verobse, this can cuase algorithms to be rambling, unstructured, or just hard to follow.</li>
+                    <li><b>Problem 1: A student has three grades; the final grade is the average of the three. List the algorithmic steps to find the final grade.</b>
+                        <table class="problems">
+                            <tr>
+                                <th>Steps</th>
+                                <th>Operation</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Get input of first grade, then second grade, then third grade</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Add the three grades together to get the "sum" (first + second + third)</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Divide the "sum" by 3 to get final grade (sum / 3)</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Output the final grade</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li><b>Problem 2: A car owner recorded the car's previous car milage, current milage, and the number of gallons of gas the owner filled their tank with. List the algorithmic steps to find teh car's mpg(miles per gallon)</b>
+                        <table class="problems">
+                            <tr>
+                                <th>Steps</th>
+                                <th>Operation</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Input the values for previous milage, current milage, and number of gallons used</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Set the value of distance driven with (current milage - previous milage)</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Set the value of MPG to (distance driven / gallons used)</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Output the MPG</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ol>
+            </td>
+        </tr>
+        <tr class="section">
+            <td ><h3>Chapter 2: Briefly define:</h3></td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li><b>Natural Language: </b><br>The language in which we speak in our everyday lives.</li>
+                    <li><b>Pseudocode: </b><br>This is used to design and represnt alogorithms. It is a form of notation that looks like high-level programming language but is written in everyday or natural language.  </li>
+                    <li><b>Sequential Operation (straigt-line algorithm): </b><br>Also known as sequential algorithm, this term means to exucute instructions in a straigt-line from top to bottom and then stops. </li>
+                    <li><b>Input: </b><br>Data values from the outside world that can be used in later instructions</li>
+                    <li><b>Outpout: </b><br>Takes the input values and returns them, sends results from the compting agent to the outside world.</li>
+                    <li><b>Conditional Statement: </b><br>This is the "question-asking" operatoins of an algorithm. This algorithm executes the next operation based on if set condition is met.</li>
+                    <li><b>Boolean Condition: </b><br>This executes code based on if the statments true or false. This is a decision making process that excutes a specific sequence based on true or false.</li>
+                    <li><b>Algorithmic Discovery Process: </b><br>This is the process of finding an algorithmic solution to a given problem, often teh most challenging and creative part of the problem-solving process.</li>
+                </ol>
+            </td>
+        </tr>
+        <tr class="section">
+            <td ><h3>Chapter 3: Briefly describe or define:</h3></td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li><b>Why algorithms should be correct.</b><br>The intended purpose of an algorithm is to solve a problem and give a result. If the problem is incorrect or the result is wrong it fails it's purpose.</li>
+                    <li><b>Why algorithms should be efficient.</b><br>Efficiency refers to a program's time (speed in running the algorithm on a real compuer) and space (the programs memory useage)  </li>
+                    <li><b>Program Maintence</b><br>Maintence accurs to both fix any errors that may have come from repeated usage and to extend a program to meet any new requirements.  </li>
+                    <li><b>Importance of algorithm: ease of understanding.</b><br> A lot of time and money is put into most programs. Often times, it is not the person who wrote the orginal program is incharge of maintaining it. Therefor, it is important to create the program to where it is easy to understand.</li>
+                    <li><b>Algorithmic Elegance</b><br>Elegance is the algorithmic equivalent of style. Making your algorithms appear clear and simple. </li>
+                    <li><b>Sequential Search Algorithm</b><br>An algorithm that searches for a target value in a random list by checking each list item one by one until target value is found or has hit the end of the list.</li>
+                    <li><b>Order of Magnitude</b><br>The concept of which the an algorithm whose work grows or varies as costant times as the input size. Order of magnitude is also used to classify algorithms</li>
+                    <li><b>Selection Sort</b><br>This algorithm performs a task that can sort numbers in ascendnig order, in a list it wll keep moving larger items toward the back of the list.</li>
+                    <li><b>Flop (floating point operations)</b><br>The operation in which a computer perfroms additions or subtractions of real numbers.</li>
+                    <li><b>Teraflop</b><br>A unit of computing speed that means a trillion floating-point operations per second.</li>
+                    <li><b>Petaflop</b><br>Also a unit of computing speed tahat mean quadrillion floating-point operations per second.</li>
+                    <li><b>Parallel Processor</b><br>A computing system with multiple core prcessors and that can performs flops much faster.</li>
+                    <li><b>Data Cleanup Problem</b><br>Algorithms in which are used to detect and remove incomplete or unnecessary data from a program.</li>
+                    <li><b>Binary Search Algorithm</b><br>This algorithm searches for a target value in a sorted list by checking at teh midpoint and then repeatedly cutting the search section in half.</li>
+                    <li><b>Pattern Matching</b><br>A pattern-matching algorithm that does a "forward march" through a set of text and attemps to match each pattern character against the text characters.</li>
+                </ol>
+            </td>
+        </tr>
+        <tr class="section">
+            <td ><h3>Karl Friederich Gauss</h3></td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li><b>Give a brief overview of Karl Friederich Gauss' mathematics abilities and scientific achievements.</b><br>Gauss was known as one of the best mathmaticans of all time and is known for contirubting in both mathmatic and scientific fields. He made contributinos to the number theory, geomtry, probability theory and much more. He was awarded the United Kingdom's prestigious Copley Medal for his inventions and mathematical researches in magnetism. He also wrote the first systematic textbook on algebraic number theory and rediscoverd teh asteriod Ceres. </li>
+                    <li><b>Describe Kar Friederich Gauss' algorithm for adding up the numbers from 1 to 100</b><br>Gauss noticed that the numbers could be grouped into 50 pairs by adding the first and last numbers. This then became the formaula: sum = n(n+1) / 2. <br>Here is the algorithm as it appears in the book: <br>
+                        <table class="problems">
+                            <tr>
+                                <th>Steps</th>
+                                <th>Operation</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Set the value of sum to 0</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Set the value of x to 1</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>While x is less than or equal to 100, do Steps 4 and 5</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Add x to sum</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Add 1 to the value of x</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Print the value of sum</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Stop</td>
+                            </tr>
+                        </table> </li>
+                        
+                    <li><b>What are gaussian optics?</b><br>It is a technique used in geometircal optics to calcuate optical properties. This technique is used to descibe the behavior of light rays in optical systems and can be characterized by a series of cardinal points.</li>
+                    <li><b>What is a "gaussian blur" and how is it used in digital image editing?</b>In image editing, it is a technique used to blur an image by adjusting an images' pixels based on its surronding pixels, giving more wight to nearby pixels and gradually decreasing the weight as the distance increases.(cloudinary.com) <br>Here an example of a photo using the gaussian blur: <br><img style="width: 15em; height: 15em; padding-left: 1em;" src="goku_img.jpg" alt="goku"></li>
+                </ol>
+            </td>
+        </tr>
+        <tr class="section">
+            <td style="text-align: center;"><h3>Sources</h3></td>
+        </tr>
+        <tr style="text-align: center;">
+            <td>
+                <ul style="list-style-type: none;">
+                    <li>Gersting, Judith, and Michael Schneider. Invitation to Computer Science 8th edidion. Cengage Learning Inc. 2019</li>
+                    <li> <a href="https://www.britannica.com/video/Top-questions-answers-Carl-Friedrich-Gauss/-245450">https://www.britannica.com</a> </li>
+                    <li><a href="https://letstalkscience.ca/educational-resources/backgrounders/gauss-summation">https://letstalkscience.ca</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Gaussian_optics">Gaussian Optics</a></li>
+                    <li><a href="https://cloudinary.com/glossary/gaussian-blur#:~:text=Reduces%20Chromatic%20Aberration%20%E2%80%93%20Corrects%20colored,edges%2C%20ensuring%20more%20accurate%20results.">couldianry.com</a></li>
+                    <li>Image generated by <a href="https://app.leonardo.ai/image-generation">leonardo.ai</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!--
+Sources: 
+    Gersting, Judith, and Michael Schneider. Invitation to Computer Science 8th edidion. Cengage Learning Inc. 2019
+
+    https://www.britannica.com/video/Top-questions-answers-Carl-Friedrich-Gauss/-245450
+
+    https://letstalkscience.ca/educational-resources/backgrounders/gauss-summation
+-->
