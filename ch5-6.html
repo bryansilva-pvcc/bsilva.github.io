@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5 and 6 Terms</title>
+    <style>
+
+        body {
+            font-family: Tahoma, Verdana, sans-serif;
+            background-color: rgb(89, 0, 173);
+            margin: 2em auto;
+            width: 100%;
+            max-width: 1200px;
+            align-items: center;
+        }
+
+        table {
+            background-color: rgb(220, 192, 247);
+            margin: 1.5em;
+            padding: 3em 1.5em 3em 1.5em;
+            border-radius: 2.5em;
+            border-style: inset;
+            border-width: 0.5em;
+        }
+
+        li b {
+            text-decoration: underline;
+        }
+
+        .section {
+            background-color: rgb(179, 99, 255);
+        }
+
+        .section td{
+            padding-left: 1em;
+        }
+
+        li {
+            padding-bottom: .5em;
+        }
+
+        .problems {
+            width: 100%;
+            max-width: 1000px;
+            padding: .25em;
+            margin: .25em auto .25em auto;
+        }
+
+        h1, h2 {
+            font-style: oblique;
+            font-weight: bolder;
+        }
+
+        .power-table {
+          table-layout: fixed;
+          width: 95%;
+          min-width: none;
+          margin: 0 auto;
+          text-align: center;
+        
+        }
+
+        .power-table th {
+            padding: 1em;
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="5">
+        <tr style="text-align: center;">
+            <td style="background-color: rgb(141, 21, 255); color: white;">
+                <h1>Chapter 5: Computer Systems Organization</h1>
+                <h2>Student: Bryan Silva</h2>
+            </td>
+        </tr>
+        <tr class="section">
+            <td><h3>Von Neumann computer architecture, 4 major subsystems:</h3></td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li><u>Memory:</u> the functional unit fo a computer that stores and recieve instructions and data being executed.</li>
+                    <li><u>Input/Output:</u> the device that allow a computer system to communicate and interact with the outside world and store information. </li>
+                    <li><u>Arithmetic/Logic Unit (ALU):</u> performs mathematical and logical operations as addition, subtraction, and comparison for equality.</li>
+                    <li><u>Control Unit:</u> fetches and executes instructions stored in the memory of the computer.</li>
+
+                </ol>
+            </td>
+        </tr>
+        <tr class="section">
+            <td ><h3>Von Neumann computer architecture, 3 characteristics:</h3></td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li>The four major substsystems that include: memory, input/output, the artihmetic/logic unit (ALU), and the control unit. The ALU and the control unit are often together and called the CPU.</li>
+                    <li>The stored program unit. This refers to the instructions to be executed by the computer are represented as binary values and stored in memory.</li>
+                    <li>The sequential execution of instructions. This is when one instruction at a time is fetched from memory to the control unit, where it is decoded and executed. </li>
+                </ol>
+            </td>
+        </tr>
+        <tr class="section">
+            <td ><h3>Computer Architecture Terms</h3></td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                   <li><b>RAM:</b> Random Access Memory: this is a memory structure in which each cell has an address and it takes the same amount of time to fetch or store any cell.</li>
+                   <li><b>Cache:</b> A high-speed memory unit, that keeps a copy of memory cells with a high likelihood of access in the near future.</li>
+                   <li><b>Principles of locality: The high likelihood that when a program fetches a piece of data or an instruction: <br></b>
+                    <ol>
+                        <li>When a computer uses something, it will probably use it again very soon.</li>
+                        <li>It will probably use the "neighbors" of this item very soon.</li>
+                    </ol>
+                   </li>
+                   <li><b>ROM:</b> Read-Only Memory: is a special type fo random access memory into which information has been prerecorded during manufracture.</li>
+                   <li><b>Memory Cell Size:</b> This is the number of bits stored in a single memory cell.</li>
+                   <li><b>Memory Cell address:</b> Is a unique numberic identifier assigned to each memory cell.</li>
+                   <li><b>Maximum Memory Size:</b> Also known as address space, is the maximum amount of memory that a computer can physically hold and is deteremined by the size of the address field. </li>
+                   <li><b>Register:</b> There are two registers that implenment the fetch and store operations, whose purpose is to hold two operands: MAR and MDR. </li>
+                   <li><b>Fetch:</b> Searches the contents fo the memory cell with a specified address and return those contents as teh result of the operation.</li>
+                   <li><b>Store:</b> meaning to store the specified value into the memroy cell specified by address.</li>
+                   <li><b>Memory Access Time:</b> This is the timeit takes to fetch ro store the contents of a single memory cell.</li>
+                   <li><b>DASD:</b> Direct Access Storage Devices: is a mass storage device in which each unit of information is associated with a unique address, but the time to access each piece of information may not be the same.</li>
+                   <li><b>Arithmetic and Logic Unit (ALU):</b> A computer subsystem that performs mathematical and logical operations as addition, subtraction, and comparison for equality. </li>
+                   <li><b>Control Unit:</b> A coputer subsystem that fetches and executes instructions stored in the memory of the computer.</li>
+                </ol>
+            </td>
+        </tr>
+        <tr style="text-align: center;">
+            <td style="background-color: rgb(141, 21, 255); color: white;">
+                <h1>Chapter 6: An Introduction to System Software and Virtual Machines</h1>
+            </td>
+        <tr>
+        <tr class="section">
+            <td><h3>Four things the interface between the computer and the hardware does:</h3></td>
+        </tr>
+            <td>
+                <ol>
+                    <li>Hides from the user the messy details of the underlying harware.</li>
+                    <li> Presents information about what is happening in a way that does not requre in-depth knowledge of teh internal structure of the system.</li>
+                    <li> Allows easy user access to the resources available on this computer.</li>
+                    <li> Prevents accidental or intentional damage to hardware, programs, and data.</li>
+                </ol>
+            </td>
+        </tr>
+        <tr class="section">
+            <td><h3>Responsibilities of systems software:</h3></td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li> Hides the complex and unimportant(to the user) details of the internal structure of the Von Neumann architecture.</li>
+                    <li> Presents important information to the user in a way that is easy to understand.</li>
+                    <li> Allows the user to access machine resources in a simple and efficient way.</li>
+                    <li> Provides a secure and safe environment in which to ooperate.</li>
+                </ol>
+            </td>
+        </tr>
+         <tr class="section">
+            <td><h3>Terms</h3></td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li><b>Systmes Software:</b> A collection fo computer programs that manage the resources of a computer and facilitate access to those resources.</li>
+                    <li><b>User Interface:</b> An intuitive visual overview as well as graphical contol of the computer's capabilities and services.</li>
+                    <li><b>Language Services:</b> Programs known as assemblers, compliers, and interpreters which allow programs to be written in high-level, user-oriented language instead of machine language.</li>
+                    <li><b>Memory Managers:</b> Allocate memory space for programs and data and retrieve this memory space when it is no longer needed. </li>
+                    <li><b>Information Managers:</b> These programs handle the organization, storage, and retrieval of information on storage devices such as the hardrive, DVDs, flash drives, and tapes.</li>
+                    <li><b>I/O Managers:</b> Software packages that allow the user to easily and efficiently use the many different types of input and output devices that exist on a modern computer system.</li>
+                    <li><b>Scheduler:</b> Keeps a list of programs ready to run on the processor, and it selects the one tha will execute next. It also allows you to have several different programs active at a single time.</li>
+                    <li><b>Utilities:</b> Library routines that provide a wide range of useful services either to a user or to other system routines. Sometimes these collections can be called program libraries.</li>
+                    <li><b>Assembly Language:</b> A low-level programming language that maps 1:1 into machine language.</li>
+                </ol>
+            </td>
+        </tr>
+        <tr class="section">
+            <td><h3>Functions of an Operating System</h3></td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li>User interface management</li>
+                    <li>Control of access to teh system and to data files</li>
+                    <li>Program scheduling and activation</li>
+                    <li>Efficient resouce allocation</li>
+                    <li>Deadlock dectection and error dectection.</li>
+                </ol>
+            </td>
+        </tr>
+        <table border="1" class="power-table">
+            <tr>
+                <th>Quantity in Bytes</th>
+                <th>Base-10 Value</th>
+                <th>Amount of Textual Information</th>
+            </tr>
+            <tr>
+                <td>1 byte</td>
+                <td>10^0</td>
+                <td>One character</td>
+            </tr>
+            <tr>
+                <td>1 kilobyte</td>
+                <td>10^3</td>
+                <td>One typed page</td>
+            </tr>
+            <tr>
+                <td>1 megabyte</td>
+                <td>10^6</td>
+                <td>Two or three novels</td>
+            </tr>
+            <tr>
+                <td>1 gigabyte</td>
+                <td>10^9</td>
+                <td>A departmental library or a large peronsal library</td>
+            </tr>
+            <tr>
+                <td>1 terabyte</td>
+                <td>10^12</td>
+                <td>The library of a major academic research university</td>
+            </tr>
+            <tr>
+                <td>1 petabyte</td>
+                <td>10^15</td>
+                <td>All printed material in all libraries in North America</td>
+            </tr>
+            <tr>
+                <td>1 exabyte</td>
+                <td>10^18</td>
+                <td>All words ever printed throughout human history</td>
+            </tr>
+            <tr>
+                <td>1 zettabyte</td>
+                <td>10^21</td>
+                <td>As of 2014, the total amount of information stored globally on teh World Wide Web was about 4-5 zettabytes</td>
+            </tr>
+            <tr>
+                <td>1 yottabyte</td>
+                <td>10^24</td>
+                <td>According to an article in Gizmodo, a design and technology blog, storing 1 yottabyte of data on hard drives would require 1 million data centers that would fill the states of Rhode Island and Delaware.</td>
+            </tr>
+        </table>
+        <table style="width: 95%;;">
+            <tr class="section">
+                <td style="text-align: center;"><h3>Sources</h3></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>
+                    <ul style="list-style-type: none;">
+                        <li><cite>Gersting, Judith, and Michael Schneider. Invitation to Computer Science 8th edidion. Cengage Learning Inc. 2019</cite></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </table>
+</body>
+</html>
+
+<!--
+Sources: 
+    Gersting, Judith, and Michael Schneider. Invitation to Computer Science 8th edidion. Cengage Learning Inc. 2019
+-->
