@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7 Terms & Information</title>
+    <style>
+
+        body {
+            font-family: Tahoma, Verdana, sans-serif;
+            background-image: url(images/ch7-BGimg.jpg);
+            margin: 2em auto;
+            width: 100%;
+            max-width: 1200px;
+            align-items: center;
+            color: white;
+        }
+
+        table {
+            background-color: rgba(2, 6, 80, 0.781);
+            margin: 1.5em;
+            padding: 3em 1.5em 3em 1.5em;
+            border-radius: 2.5em;
+            border-style: inset;
+            border-width: 0.5em;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        li b {
+            text-decoration: underline;
+        }
+
+        .section {
+            background-color: rgb(3, 3, 243);
+        }
+
+        .section td{
+            padding-left: 1em;
+        }
+
+        li {
+            padding-bottom: 1.5em;
+        }
+
+        h1, h2 {
+            font-style: oblique;
+            font-weight: bolder;
+        }
+
+        tr td {
+            padding: 1em 2em;
+        }
+
+        li cite a {
+            color: rgb(21, 183, 0);
+        }
+        td {
+            border-radius: 1em;
+        }
+
+        img {
+            width: 500px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="5">
+        <tr style="text-align: center;">
+            <td style="background-color: rgba(14, 2, 250, 0.417); color: white;">
+                <h1>Chapter 7: Computer Networks & Cloud Computing</h1>
+                <h2>Student: Bryan Silva</h2>
+            </td>
+        </tr>
+        <tr class="section">
+            <td><h3>Briefly describe or define:</h3></td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li><u>Computer Network:</u> A set of independent computer sytems connected together by telecommunication links for the purpose of sharing infomration and resources.</li>
+                    <li><u>Analog Device:</u> Used to transmiting human voice and can vary continously in pitch and volume. For example: Vinyl Record Players or radios.</li>
+                    <li><u>Digital Device:</u> A device that produces digital information in binary digits: 0s and 1s. For example: Computers or smartphones. </li>
+                    <li><u>Modem:</u> A hardware device taht modulates, or alters, a standard analog signal called a carrier so that it encodes binary information.</li>
+                    <li><u>Bandwidth:</u> This is the capacity for transmitting data, it is the rate in which infomration could be sent and received.</li>
+                    <li><u>Ethernet:</u> A broadband technology that is most widley used. A Wired connection that allows you to connect computers in a local area network (LAN) </li>
+                    <li><u>WLAN:</u> Short for Wireless Local Area Network, it transmits from computer to a local wireless base station to provide full internet access. The base statation, refered to a wireless router is then conneced to a traditional wired network like a DSL or cable modem. </li>
+                    <li><u>IEE 802.11 wireless network standard:</u> This is another name for Wi-Fi, this is the standard for implementing wireless LAN</li>
+                    <li><u>MAN:</u> Short for Metropolitan Area Network, used to provide interent access to all computers within a neighborhood or metropolitan area.</li>
+                    <li><u>Internet of Things:</u> Meaning that the interenet is no longer a network of just computers and data, but it also a way to connect to everday use devices such as smart homes gadgets like a thermostat or house lights ect.</li>
+                    <li><u>LAN:</u> Short for Local Area Network, connects hardware devcies such as computers, printers, and storage devices within close proximity. In example, the interconnection of machines in one room.</li>
+                    <li><u>Repeater:</u> A device that simply amplifies and forwards a signal. When there are 2 ethernet LANs connected by a repeater, they function as if they are a single network.</li>
+                    <li><u>Bridge:</u> A "smarter" device than a repeater that has knowledge about the nodes located on each separate network. </li>
+                    <li><u>WAN:</u> Short for Wide Area Network, connects devices that are not within close proximity and connect accross a large geographical area.</li>
+                    <li><u>Packet and Packet Switching:</u> Packet is a unit of transmission in a WAN and is an information block with a fixed maximum size and is transmitted through the network. Packet-switched is technoloy used by the WAN to deliver messages from one node to another.  </li>
+                    <li><u>ISP:</u> Internet Service Provider, is a business whose purpose is to provide access from a private network; such as a corperate or university network, to the internet. </li>
+                    <li><u>Firewall:</u> Is a software or harware component that controls access from a network to a computer system, which protects it from unauthorzed access.</li>
+                    <li><u>Protocol:</u> Is a mutually agreed upon set of rules, conventions, and agreements for the efficient and orderly exchange of information.</li>
+                    <li><u>Cloud Computing:</u> A computing system in which the user can be completely unaware of where data is stored and where services are being provided. It is the delivery of computing services through servers, storage, and databases over the internet rather than on hardware.</li>
+                    <li><u>Net Neutrality:</u> The concept that a public infomration network such as an Internet Servicde Provider or ISP should treat all users, all platforms, and all content equally.</li>
+                </ol>
+            </td>
+        </tr>
+        <tr class="section">
+            <td ><h3>Briefly descibe the five layers of TCP/IP (the Internet protocol hierarchy):</h3></td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li>Layer 1. Physical layer: The goal of this layer is to create a "bit pipe" between two computers. This is the exchange of binary digits(bits) across a physical communication channel, such as a fiber-optic cable or wireless radio channel. </li>
+                    <li>Layer 2. Data link layer: The goal of this layer is to create an error-free "message pipe". The data link protocal addresses and solve two issues: error handling and framng. </li>
+                    <li>Layer 3. Network layer: The two main responsibilities of this layer is to create a universal addressing scheme for all network nodes, and delivering messages between any two nodes in the network. This layer is also known as the "glue" that holds the entire network together. The addressing scheme, in which two nodes use to identify each other is the IP address.</li>
+                    <li>Layer 4. Transport layer: This is a "special handling" service. This layer protocal creates a "program-to-program" delivery service and ensures that data is transfered reliably and without error between applications. </li>
+                    <li>Layer 5. Application layer: Involves the rules for implementing the end-user services provided by a network. Allows users to access network through protocols such as (HTTP) Hypertext Transer Protocol</li>
+                </ol>
+            </td>
+        </tr>
+        <tr class="section">
+            <td ><h3>List and briefly describe at least 3 network services and bnefits:</h3></td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li>Email (Electronic Email): A fast and convient way to send messages whenever we want. Another form of this is also known as texting. </li>
+                    <li>Social Networking: Applications that allow social exchange through  text, sound, graphics, vidoes, and imaging. Popular networks include Facebook and Youtube. </li>
+                    <li>Electronc Commerce: Also known as ecommerce, this service has allowed users to sell goods and services through the web. </li>
+                </ol>
+            </td>
+        </tr>
+        <tr class="section">
+            <td ><h3>Questions About IEE:</h3></td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>What does the acronym, IEEE, stand for? <br>Institute of Electrical and Electronics Engineers</li>
+                    <li>What is the mission and vision of IEEE?
+                        <br>Misson: IEEE's core purpose is to foster technological innovation and excellence for the benefit of humanity.
+                        <br>Vision: IEEE will be essential to the global technical community and to technical professionals everywhere, and be universally recognized for the contributions of technology and of technical professionals in improving global conditions.
+                    </li>
+                    <li>What are the benefits of IEEE membership?
+                        <br>Becoming a member allows you to get the connections, knowledge, and recognition to grow your career. Membership is also tailored to your needs depending on wether you join as a professional or a student.
+                        <br>Some benefits include: 
+                        <br> <ul>
+                            <li>Career Resources</li>
+                            <li>Certifications in fields like software developement and engineering.</li>
+                            <li>Societies and Groups that give networking opportunites and a range of resouces.</li>
+                        </ul>
+                    </li>
+                    <li>What are the requirements for IEEE student membership, and how much does undergraduate membership cost annually for students from the USA?
+                        <br> Students can qualify for up to 8 cumuulative years as a registered undergraduate or graduate student carrying at least 50 percent of a full-time academic program in an IEEE-designated field. Membership dues are annually and for an undergraduate in the USA is $32.00
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr class="section">
+            <td ><h3>LAN Topologies </h3></td>
+        </tr>
+        <tr>
+            <td><img src="topologies.jpg" alt="LAN topolgies"></td>
+        </tr>
+        <table style="width: 100%; ">
+            <tr class="section">
+                <td style="text-align: center;"><h3>Sources</h3></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>
+                    <ul style="list-style-type: none;">
+                        <li><cite>Gersting, Judith, and Michael Schneider. Invitation to Computer Science 8th edidion. Cengage Learning Inc. 2019</cite></li>
+                        <li><cite>Image Generated at <a href="https://leonardo.ai/">https://leonardo.ai/</a></cite></li>
+                        <li><cite>IEEE Advanced Technology for Humanity at <a href="https://www.ieee.org/"> https://www.ieee.org/</a></cite></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </table>
+</body>
+</html>
+
+<!--
+Sources: 
+    Gersting, Judith, and Michael Schneider. Invitation to Computer Science 8th edidion. Cengage Learning Inc. 2019
+-->
