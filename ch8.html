@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8: Terms & Information</title>
+
+    <style>
+        body {
+            background-image: url(images/ch8.jpg);
+            background-size: cover;
+            margin: 2em auto
+        }
+
+        table {
+            width: 75%;
+            margin: auto;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 1.5em;
+            border-collapse: collapse;
+            overflow: hidden;
+        }
+
+
+        h1 { 
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        th {
+            background-color: rgba(3, 156, 207, 0.819);
+            padding: 10px;
+            font-size: 1.5em;
+        }
+
+        th:first-child, td:first-child {
+            width: 20%;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <table border="3" style="background-color: rgba(243, 240, 240, 0.901)">
+        <tr>
+            <td colspan="2" style="text-align: center;"><h1>Chapter 8: Information Security</h1><br><h3>Student: Bryan Silva</h3></td>
+            
+        </tr>
+        <tr>
+            <th>Terms</th>
+            <th>Definitions</th>
+        </tr>
+        <tr>
+            <td>1. Information Security</td>
+            <td>Is the goal of keeping information protected from those who do not have permission to access it. Electronic information such as, data stored on computers hard disk, cloud, flash drive, or smartphone.</td>
+        </tr>
+        <tr>
+            <td>2. Authentication</td>
+            <td>Is the process of verifying who has the right to gain access to the computer. Operatng systems maintains a file of users ID's and Passwords.</td>
+        </tr>
+        <tr>
+            <td>3. Authorization</td>
+            <td>Governs what an authenticated user of a computer is allowed to do. For example, when you log into your bank account, you use Authentication to gain access, Authorization if having access to only your account and features but not able to change balance or interest rates.</td>
+        </tr>
+        <tr>
+            <td>4. Dual Authentication</td>
+            <td>Is a second authentication measure after teh user enters the user ID and password. This second form of authentication can be a randomizced numbers sent to the users phone to enter, it can also be a CAPTCHA to ensure your a acutlly person logging on.  </td>
+        </tr>
+        <tr>
+            <td>5. Social Engineering</td>
+            <td>The process of using people to get the information you want, like a sensitive information or passwords. This can be either direct or indirect approach.</td>
+        </tr>
+        <tr>
+            <td>6. Virus</td>
+            <td>A computer program that embeds itself within another program or file in order to infect a host computer and then spread.</td>
+        </tr>
+        <tr>
+            <td>7. Worm</td>
+            <td>Similar to a virus, t can send copies of itself to other nodes on a computer network without havng to be carried by an infected host file. </td>
+        </tr>
+        <tr>
+            <td>8. Trojan Horse</td>
+            <td>A computer program that does some legitimate computatoinal task but, unbeknownst to teh user, also contains code to perfrom malicious attacks. </td>
+        </tr>
+        <tr>
+            <td>9. Ransomware</td>
+            <td>Malware that invades a user's computer, encrypts all files, then demands a ransom payment for teh files to be released. </td>
+        </tr>
+        <tr>
+            <td>10. Phishing</td>
+            <td>The practice of sending emails purporting to be legimate to a large number of potential victims in the hopes of luring users to visit a fake website, where personal information can be collected. For exmaple, a link that could take you to your bank(which you thought was yours but fake) then steal your login credentials.</td>
+        </tr>
+        <tr>
+            <td>11. White Hat</td>
+            <td>Are security experts who try to keep us safe in cyberspace. </td>
+        </tr>
+        <tr>
+            <td>12. Black Hat</td>
+            <td>The people who try to ferret out computer system weaknesses for financial gain, control, or outright destruction. </td>
+        </tr>
+        <tr>
+            <td>13. Encryption/ Decryption</td>
+            <td>A security measure in place to transmit data securely. It makes imofrmation meaningless incase someone manages to steal it. The process is done by using an algorithmn to convert information into a representation that cannot be understtod or utilized by anyone without the decryption algorithm. Decryption is the process of reversng teh effectts fo encryption back into its ornginal plaintext.</td>
+        </tr>
+        <tr>
+            <td>14. Crytography</td>
+            <td>Science of "Secret Writing". Which can be refered to encryption and decryption. The message that is being encrypted is called ciphertext.</td>
+        </tr>
+        <tr>
+            <td>15. Symmetric Encryption Algorithm</td>
+            <td>An encryption algorithm that requires a secret key shared by sender and receiver. </td>
+        </tr>
+        <tr>
+            <td>16. Caesar Cipher</td>
+            <td>An encryption algorithmn that shifts each character in the message to another character some fixed distance farther along in the alphabet. This is also called shift cipher.</td>
+        </tr>
+        <tr>
+            <td>17. Block Cipher</td>
+            <td>Any encryption algorithmn that encodes a block of characters together, so that each coded character is the result of several plaintext characters.</td>
+        </tr>
+        <tr>
+            <td>18. Data Encryption Standard (DES)</td>
+            <td>Designed to protect electronic informaton, so the plantext is a binary string of 0s and 1s, just as it is stored in a computer. It is an encryption algorithm developed by IBM, and certifed as an international standard by the ISO.</td>
+        </tr>
+        <tr>
+            <td>19. Public Key System</td>
+            <td>An asymetric encryption algorithm that uses two keys, a public key for encryption and a private key for decrypting them. It allows anyone to send a secure message to a reciever without needing to share a scret key, since the reciever will have the private key. </td>
+        </tr>
+        <tr>
+            <td>20. Embedded Computers</td>
+            <td>Computational devices such as chips, processors, or computers that are embedded within another system. They could be found in: your car, home thermostat, cell phone, microwave, bank ATM, etc.</td>
+        </tr>
+        <tr>
+            <td>How to hide text files in a steganographic image:</td>
+            <td>This can be achieved by changing the least significant bit of each byte of the image file to match the binary form of the characters in the text.</td>
+        </tr>
+        <tr>
+            <th colspan="2">Six ways to protect yourself from most cyber attacks</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <ol>
+                    <li>Ensure your computer has up-to-date aniivirus software. This helps dectect and remove worms, viruses, and trojan horses from your computer.</li>
+                    <li>Be sure to install or update your firewall software, to help guard your computers access points and blocks unauthorzied communication or operations.</li>
+                    <li>Install up-to-date antispyware software which routinely scans and removes spyware that may track your web activity, steal passwords or credit card information.</li>
+                    <li>Set up your browser to use a pop-up blocker, to prevent you from clicking on malicious pop-ups. </li>
+                    <li>Always install the latest security patches or updates to your operating system. </li>
+                    <li>Avoid sharing personal or financial information through suspicous emails. </li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Brackets</th>
+        </tr>
+            <td>What is Brackets?</td>
+            <td>Brackets is a open-source text editor for web development, particularly for HTML, CSS, and JavaScript.</td>
+        <tr>
+            <td>How much does it cost?</td>
+            <td>It is free for anyone to download.</td>
+        </tr>
+        <tr>
+            <td>Describe several extensions you can download to enhance Brackeets:</td>
+            <td>
+                <ul>
+                    <li><u>Git: </u>Has git integration, meaning you can use git directly inside the Brackets code editor.</li>
+                    <li><u>Emmet: </u>Helps you code faster by expanding short expressions into complete code snippets.</li>
+                    <li><u>Beautify: </u>Automatically cleans up and formats HTML, CSS, and JavaScript files. </li>
+                    <li><u>Matrix Theme: </u> A theme to create a visual effect.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Crypt Games</th>
+        </tr>
+            <td>Easy: Pig Pen</td>
+            <td>This was interestin and pretty easy. Had to match the symbosls with the corresponding letters.</td>
+        <tr>
+            <td>Normal: Rail Fence</td>
+            <td>This one was little difficult at first, but after looking at the example and trying to understand it, this way of decrypting was faster than the first game.</td>
+        </tr>
+        <tr>
+            <td>Hard: BIFID</td>
+            <td>This one was hard, but with the provided link to instructions and examples made it easy to understand, but once understood was very tedious to cipher and definlty took the longest to do so.</td>
+        </tr>
+        <tr>
+            <th colspan="2">My Opinion</th>
+        </tr>
+            <td>What do you think of Christine McCarthy and her cipher games project?</td>
+            <td>I enjoyed it and was very interesting learning the diffents ways to decrypte encrypted messages. Overall, a really great project that defiinitly took a lot of time and research to put together.</td>
+        <tr>
+            <td>Would you recomend this site to others who might be interested in cryptography.</td>
+            <td>Absolutley. Even for someone who isn't interested in cryptograph, this was a great way to learn different methods of decrypting.</td>
+        </tr>
+        <tr>
+            <td>What do you think of Christine's code?</td>
+            <td>I felt that her code was well designed and user-friendly. Puzzles were challenging but fun and fair. Really liked how if you didn't understand how to complete one game, the title of the game was the link to the insturctions to breakdown how to solve the game. </td>
+        </tr>
+        <tr>
+            <th colspan="2">Sources</th>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <ul style="list-style: none;">
+                    <li><cite>Gersting, Judith, and Michael Schneider. Invitation to Computer Science 8th edidion. Cengage Learning Inc. 2019</cite></li>
+                    <li><cite>Image Generated at <a href="https://leonardo.ai/">https://leonardo.ai/</a></cite></li>
+                    <li><a href="https://brackets.io">https://brackets.io</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>   
+    
+</body>
+</html>
