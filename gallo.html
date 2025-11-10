@@ -42,6 +42,7 @@ Program Purpose: This program will find the cost of pizzas & subs
 
         table {
             background-color: rgba(255, 255, 106, 0.341);
+            margin-bottom: 1.5em;
         }
 
         img {
@@ -115,6 +116,48 @@ Program Purpose: This program will find the cost of pizzas & subs
                 "\nSales tax:       " + dollar.format(salestaxamount) + 
                 "\nTotal:           " + dollar.format(total) + howtopay);
         }  //end function pizza order
+        
+        function suborder() {
+          //prices & tax rate constraints
+            const salestaxrate = 0.07;
+            const discountrate = 0.15;
+            const hot_italian_sub = 12.99;
+            const ham_cheese = 10.99;
+            const philly_cheese = 12.99;
+            const smoked_turkey = 11.99;
+            const dollar = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD',});
+            const howtopay = "\n\nCredit, Debit, and Cash accepted";
+            const line = "\n----------------------------------"
+
+          //variables for calculated amounts
+            var subtype = 0;
+            var numsubs = 0;
+            var subcost = 0;
+            var salestaxamount = 0;
+            var total = 0;
+
+          //ask user for imput
+            part1 = "We have four kinds of subs available";
+            part2 = "\nEnter: \n\t 1 for Hot Italian Sub \n\t 2 for Ham and Cheese Sub \n\t 3 for Philly Cheese Steak Sub \n\t 4 for Smoked Turkey Sub";
+            subtype = prompt(part1 + part2);
+            numsubs = prompt("Enter the number of Subs you would like to order:");
+
+          //calculate amounts
+            if (subtype == 1) subcost = numsubs * hot_italian_sub;
+            if (subtype == 2) subcost = numsubs * ham_cheese;
+            if (subtype == 3) subcost = numsubs * philly_cheese;
+            if (subtype == 4) subcost = numsubs * smoked_turkey;
+
+            salestaxamount = subcost * salestaxrate;
+            total = subcost + salestaxamount;
+
+          //display results
+            alert("\nGALLO'S PIZZA & SUBS. SHOP" + line +
+                "\nNumber of subs: " + numsubs +
+                "\nSub cost:      " + dollar.format(subcost) + 
+                "\nSales tax:       " + dollar.format(salestaxamount) + 
+                "\nTotal:           " + dollar.format(total) + howtopay);
+        }  //end function sub order
     </script>
 </head>
 <body>
@@ -142,6 +185,20 @@ Program Purpose: This program will find the cost of pizzas & subs
             <tr><td colspan="2">
                 <form>
                     <input type="button" value="Click here to order pizza" class="button" onclick="pizzaorder()">
+                </form>
+            </td></tr>
+        </table>
+         <table border = "1">
+            <tr class="header"><td colspan ="2"><h3>Subs Price List</h3></td></tr>
+            <tr><td colspan="2"><img src="sub.jpg" alt="sub sandwhich"></td></tr>
+            <tr><td>Hot Italian Sub    </td>   <td>$12.99</td></tr>
+            <tr><td>Ham & Cheese Sub   </td>   <td>$10.99</td></tr>
+            <tr><td>Philly Cheese Steak</td>   <td>$12.99</td></tr>
+            <tr><td>Smoked Turkey Sub  </td>   <td>$11.99</td></tr>
+            <tr><td>Sales tax   </td>   <td>7%</td></tr>
+            <tr><td colspan="2">
+                <form>
+                    <input type="button" value="Click here to order subs" class="button" onclick="suborder()">
                 </form>
             </td></tr>
         </table>
