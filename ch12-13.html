@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapters 12 & 13: Terms & Information</title>
+
+    <style>
+        body {
+            background-image: url(images/space.jpg);
+            margin: 2em auto
+        }
+
+        table {
+            width: 75%;
+            margin: auto;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 1.5em;
+            border-collapse: collapse;
+            overflow: hidden;
+        }
+
+
+        h1 { 
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        th {
+            background-color: rgba(68, 83, 69, 0.8);
+            padding: 10px;
+            font-size: 1.5em;
+            text-align: left;
+        }
+
+        th:first-child {
+            width: 20%;
+            font-weight: bold;
+        }
+
+        .questions p {
+            font-weight: 100;
+        }
+
+        .questions ol li{
+            padding: 0;
+        }
+
+        .alpha-list ol li{
+            list-style: lower-alpha;
+        }
+
+        .chapter {
+            text-align: center;
+        }
+
+        ol li i {
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    <table border="3" style="background-color: rgba(243, 240, 240, 0.901)">
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <h1>Chapter 12: Models of Computation</h1>
+                <h1>chapter 13: Simulation & Modeling</h1>
+                <br><h3>Student: Bryan Silva</h3></td>
+        </tr>
+        <tr>
+            <th colspan="2" class="chapter">Chapter 12: Models of Computation</th>
+        </tr>
+       <tr>
+            <th colspan="2">1. What is the Purpose of a model?</th>
+       </tr>
+       <tr>
+            <td colspan="2">
+               <p>A model is a simplified representation of a system to help enhance the understanding of it. Rather than the real thing,
+                it can be used to train, study, and make informed decisions. 
+               </p>
+            </td>
+       </tr>
+        <tr>
+            <th colspan="2">2. List four phenomena of a model:
+            </th>
+        </tr>
+        <tr>
+            <td colspan="2" class="alpha-list">
+                <ol>
+                    <li>Captures the essence-the important properties-of the real thing</li>
+                    <li>Probably differs in scale from the real thing</li>
+                    <li>Omits some of the details of the real thing</li>
+                    <li>Lacks the full functionality of the real thing.</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">3. List four things a computing agent should be able to do:</th>
+        </tr>
+        <tr>
+            <td colspan="2" class="alpha-list">
+                <ol>
+                    <li>Accept input</li>
+                    <li>Store information in memory and retrieve it from memeory.</li>
+                    <li>Take actions according to algorithm instructions; the choice of what action to take may
+                        depend on the present state of the computing agent, as well as on the input item presently
+                        being processed.
+                    </li>
+                    <li>Produce output</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">4. List four characteristics fo an algorithm:</th>
+        </tr>
+        <tr>
+            <td colspan="2" class="alpha-list">
+                <ol>
+                    <li>Be a well-ordered collection</li>
+                    <li>Consist of unambiguous and effectively computable operations</li>
+                    <li>Halt in a finite amount of time</li>
+                    <li>Produce a result</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">5. What is the "halting problem" with regards to an uncomputable problem?</th>
+       </tr>
+       <tr>
+            <td colspan="2">
+               <p>Decide, given any collection of Turning machine instructions together with any intial tape contents, whether that
+                Turing machine will ever halt if started on that tape. 
+               </p>
+            </td>
+       </tr>
+        <tr>
+            <th colspan="2" class="chapter">Chapter 13: Simulation & Modeling</th>
+        </tr>
+        <tr>
+            <th>Terms</th>
+            <th>Definition</th>
+        </tr>
+        <tr>
+            <td>1. Scientific Method</td>
+            <td>It is the method of observing the behavior of a system and formulating a hypothesis that tries 
+                to understand and explain that behavior. 
+            </td>
+        </tr>
+        <tr>
+            <td>2. Computational Model</td>
+            <td>A model constructed usijng algorithmic procedures implemented as computer programs; 
+                also called simulation model. 
+            </td>
+        </tr>
+        <tr>
+            <td>3. Discrete Event Simulation</td>
+            <td>A computational modeling technique that simulates the behavior of a system only at descrete points in time.</td>
+        </tr>
+        <tr>
+            <td>4. List and describe seven reasons to construct a simulation model.</td>
+            <td> 
+                <ol>
+                    <li><i>Existence</i>: using a model can help with experimenting and the construction of the actual system.</li>
+                    <li><i>Physcial Realization</i>: the system is not constructed from entities that can be represented by physical objects.</li>
+                    <li><i>Safety</i>: experimenting on a replica can be safer then on the actaul system. </li>
+                    <li><i>Speed of construction</i>: it might take too much time to construct a physical model and can sometimes be faster to design and build a computer simulation.</li>
+                    <li><i>Time Scale</i>: some physical systems change too slowly or too quickly. </li>
+                    <li><i>Ethical behavior</i>: some physical models have serious moral and ethical consequences, perhaps the best known being the use of animals in medical research.</li>
+                    <li><i>Ease of modification</i>: if unsatisfied with a physical model, then a new one would need to be constucted. In a simulation, only need to change some numerical parameters and rerun the existing model.</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Illustris: "The Mother of All Computations"</th>
+        </tr>
+        <tr>
+            <td colspan="2" class="questions">
+                <ol>
+                    <li>What is Illustris?</li>
+                    <p>Illustris is a supercomputer simulation designed to model the evolution of the cosmos by 13.8 billion years. From the Big Bank up until today.</p>
+
+                    <li>What fields of science were involved in the Illustris computational model?</li>
+                    <p>The Illustris computational model involved the folling fields of science: 
+                        <ul>
+                            <li>Physics</li>
+                            <li>Astronomy</li>
+                            <li>Hydrodynamics</li>
+                            <li>Chemistry</li>
+                            <li>Mathematics</li>
+                        </ul>
+                    </p>
+
+                    <li>What does Illustris simulate?</li>
+                    <p>The galactic eveolution</p>
+
+                    <li>How long did the project take?</li>
+                    <p>The project took five years, with the software teams made up of the United States, France, and Germany. It required 3 months of nonstop parallel computing.</p>
+
+                    <li>How many years of gallactic evolution are simulated in Illustris?</li>
+                    <p>14 Billion Years.</p>
+
+                    <li>Illustris was created using two supercomputers. What is a supercomputer?</li>
+                    <p>It is a computer with a high level of performance, capable fo performing billions of calcuations per second by using thousands of processor to work together on complex problems.</p>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <iframe style="display: block; margin: auto; margin-top: 1em;" width="560" height="315" src="https://youtube.com/embed/NjSFR40SY58"></iframe>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="5" class="chapter">Sources</th>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align: center;">
+                <ul style="list-style: none;">
+                    <li><cite>Gersting, Judith, and Michael Schneider. Invitation to Computer Science 8th edidion. Cengage Learning Inc. 2019</cite></li>
+                    <li> Video: https://youtu.be/NjSFR40SY58 / by Mark Vogelsberger</li>
+                </ul>
+            </td>
+        </tr>
+    </table> 
+</body>
+</html>
